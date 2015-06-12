@@ -1,0 +1,41 @@
+[7:18:46:468] - Thread[GLThread 16740,5,main] - Session started. Session Id : 'session', File : 'tavlaplus/20150316071846-468_session.tp'
+[7:18:49:341] - Thread[GLThread 16740,5,main] - Gdx bus resumed.
+[7:18:49:342] - Thread[GLThread 16740,5,main] - Screen.show() IntroScreen
+[7:18:49:345] - Thread[TaskExecutor-1,5,main] - Connection state changed INITIAL
+[7:18:49:419] - Thread[TaskExecutor-1,5,main] - Connection state changed DISCONNECTED
+[7:18:51:511] - Thread[GLThread 16740,5,main] - Switching to screen INTRO with parameters {}
+[7:18:51:512] - Thread[GLThread 16740,5,main] - Gdx bus paused
+[7:18:51:532] - Thread[GLThread 16740,5,main] - Gdx bus resumed.
+[7:18:51:533] - Thread[GLThread 16740,5,main] - Screen.show() IntroScreen
+[7:18:53:503] - Thread[GLThread 16740,5,main] - facebookLoginButton is clicked.
+[7:18:53:517] - Thread[TaskExecutor-2,5,main] - Connection state changed DISCONNECTED
+[7:18:54:815] - Thread[GLThread 16740,5,main] - Switching to screen INTRO with parameters {}
+[7:18:54:816] - Thread[GLThread 16740,5,main] - Gdx bus paused
+[7:18:54:833] - Thread[GLThread 16740,5,main] - Gdx bus resumed.
+[7:18:54:834] - Thread[GLThread 16740,5,main] - Screen.show() IntroScreen
+[7:19:02:999] - Thread[GLThread 16740,5,main] - facebookLoginButton is clicked.
+[7:19:04:127] - Thread[New I/O client worker #3-1,5,main] - Connection state changed RECONNECTED
+[7:19:14:896] - Thread[pool-2-thread-1,5,main] - Login service error : LoginServiceResponse[errorCode=-99, status='error', hash='null', errorDescription='failed to connect to tavlaplus.peakgames.net/46.45.153.34 (port 80) after 10000ms']
+[7:19:16:690] - Thread[GLThread 16740,5,main] - facebookLoginButton is clicked.
+[7:19:17:348] - Thread[pool-2-thread-1,5,main] - REQ : {"userId":"100001702723027","roster":[],"name":"Mocsár Kálmán","command":1000,"secret":"8bc1445596df3f463fac5f2ae35ad174","access_token":"CAAD90vM4EUQBAFexCcjcjdc70QmWVMjKX3GghIR0mBaAbaOUugZAqqgspgmdsKG2ZBYzX5Dki9PaBkDwnG1xmenIHJtVIiDM7Jv1oRZCy0FWF6tLDkFwLb6FZBa8ybkI2PyIPxhPf5PMXQHSQELihZCbg0W0GeSVYuBQnL5I2NWIPZCb616M59tJYAyxMG17ZClACNKHptIUU8eSZCcBFkGw3z5ctOZA6avT8sOY0bb37UXBymWPFa2qm","vers":"25","deviceType":"2","deviceToken":"APA91bFBlb5yCIWM2bqTPqSxSFCyoFQO5xVyCgQeMbNhT9tIEqhSHjOG7jJICMMudmeHbe2uRDflfMINQHA1EFrj6crpPDknr8r3YmpQ9Vg3N7-kCglb8MP5r-fTrm1uGdUhN8sJCnbfIL09VguwJxkkqu8WeJJWo7ompCkJfIhyjpHxupxSvHJuoSu0TZ8lBx6be4CAXZax","deviceId":"1374842300452","mac":"1374842300452"}
+[7:19:17:446] - Thread[GLThread 16740,5,main] - Switching to screen MENU with parameters {}
+[7:19:17:448] - Thread[GLThread 16740,5,main] - Gdx bus paused
+[7:19:17:460] - Thread[GLThread 16740,5,main] - Initializing purchase service...
+[7:19:17:565] - Thread[main,5,main] - IabManager successfully initialized.
+[7:19:17:768] - Thread[GLThread 16740,5,main] - Gdx bus resumed.
+[7:19:17:770] - Thread[GLThread 16740,5,main] - Screen.show() MenuScreen
+[7:19:18:042] - Thread[pool-2-thread-1,5,main] - Purchase service initialized. There are 6 items.
+[7:19:18:043] - Thread[pool-2-thread-1,5,main] - Iab items ready (crm) : [IabItem [title=$ 50.000  (Backgammon Plus), description=$ 50.000 , marketPrice=550,00 HUF, sku=m_tavla_50000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=50000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=550000000, consumable=true], IabItem [title=$ 225.000 (Backgammon Plus), description=$ 225.000, marketPrice=1 380,00 HUF, sku=m_tavla_225000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=225000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=1380000000, consumable=true], IabItem [title=$ 675.000 (Backgammon Plus), description=$ 675.000, marketPrice=3 070,00 HUF, sku=m_tavla_675000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=675000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=3070000000, consumable=true], IabItem [title=$ 1.500.000 (Backgammon Plus), description=$ 1.500.000, marketPrice=4 453,00 HUF, sku=m_tavla_1500000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=1500000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=4453000000, consumable=true], IabItem [title=$ 5.000.000  (Backgammon Plus), description=$ 5.000.000 , marketPrice=9 088,00 HUF, sku=m_tavla_5000000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=5000000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=9088000000, consumable=true], IabItem [title=$ 25.000.000  (Backgammon Plus), description=$ 25.000.000 , marketPrice=11 974,00 HUF, sku=m_tavla_25000000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=25000000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=11974000000, consumable=true]]
+[7:19:18:773] - Thread[LobbyUpdateTimer,5,main] - REQ : {"command":1016}
+[7:19:18:872] - Thread[GLThread 16740,5,main] - RES : {"commandName":"SERVER_LOBBY_UPDATE_DATA","totalUsers":1690,"t":1426486756133,"errorCode":0,"roomUserCount":[{"users":150110,"roomId":16},{"users":595,"roomId":17},{"users":1252,"roomId":18},{"users":18560,"roomId":13},{"users":3833,"roomId":14},{"users":1227,"roomId":15}],"command":1016}
+[7:19:21:662] - Thread[GLThread 16740,5,main] - REQ : {"command":3106}
+[7:19:21:756] - Thread[GLThread 16740,5,main] - RES : {"commandName":"SERVER_CHOOSE_ROOM","t":1426486762041,"errorCode":0,"command":3106,"room":16}
+[7:19:21:772] - Thread[GLThread 16740,5,main] - Switching to screen CREATE_TABLE with parameters {NewTableScreenRoomId=16}
+[7:19:21:773] - Thread[GLThread 16740,5,main] - Gdx bus paused
+[7:19:21:934] - Thread[GLThread 16740,5,main] - Gdx bus resumed.
+[7:19:21:935] - Thread[GLThread 16740,5,main] - Screen.show() NewTableScreen
+[7:19:33:945] - Thread[GLThread 16740,5,main] - okButton is clicked.
+[7:19:33:954] - Thread[GLThread 16740,5,main] - REQ : {"room":16,"command":1001}
+[7:19:34:080] - Thread[GLThread 16740,5,main] - REQ : {"command":2000,"minBet":5356,"maxBet":24040,"type":0}
+[7:19:34:163] - Thread[GLThread 16740,5,main] - Switching to screen PLAY with parameters {}
+[7:19:34:165] - Thread[GLThread 16740,5,main] - Gdx bus paused

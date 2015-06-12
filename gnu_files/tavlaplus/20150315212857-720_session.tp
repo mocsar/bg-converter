@@ -1,0 +1,27 @@
+[21:28:57:720] - Thread[GLThread 16295,5,main] - Session started. Session Id : 'session', File : 'tavlaplus/20150315212857-720_session.tp'
+[21:29:00:531] - Thread[GLThread 16295,5,main] - Gdx bus resumed.
+[21:29:00:534] - Thread[GLThread 16295,5,main] - Screen.show() IntroScreen
+[21:29:00:536] - Thread[TaskExecutor-1,5,main] - Connection state changed INITIAL
+[21:29:00:764] - Thread[New I/O client worker #1-1,5,main] - Connection state changed CONNECTED
+[21:29:02:482] - Thread[pool-2-thread-1,5,main] - REQ : {"userId":"100001702723027","roster":[],"name":"Mocsár Kálmán","command":1000,"secret":"8bc1445596df3f463fac5f2ae35ad174","access_token":"CAAD90vM4EUQBAFexCcjcjdc70QmWVMjKX3GghIR0mBaAbaOUugZAqqgspgmdsKG2ZBYzX5Dki9PaBkDwnG1xmenIHJtVIiDM7Jv1oRZCy0FWF6tLDkFwLb6FZBa8ybkI2PyIPxhPf5PMXQHSQELihZCbg0W0GeSVYuBQnL5I2NWIPZCb616M59tJYAyxMG17ZClACNKHptIUU8eSZCcBFkGw3z5ctOZA6avT8sOY0bb37UXBymWPFa2qm","vers":"25","deviceType":"2","deviceToken":"APA91bFBlb5yCIWM2bqTPqSxSFCyoFQO5xVyCgQeMbNhT9tIEqhSHjOG7jJICMMudmeHbe2uRDflfMINQHA1EFrj6crpPDknr8r3YmpQ9Vg3N7-kCglb8MP5r-fTrm1uGdUhN8sJCnbfIL09VguwJxkkqu8WeJJWo7ompCkJfIhyjpHxupxSvHJuoSu0TZ8lBx6be4CAXZax","deviceId":"1374842300452","mac":"1374842300452"}
+[21:29:02:641] - Thread[GLThread 16295,5,main] - Switching to screen MENU with parameters {}
+[21:29:02:642] - Thread[GLThread 16295,5,main] - Gdx bus paused
+[21:29:02:651] - Thread[GLThread 16295,5,main] - Initializing purchase service...
+[21:29:02:840] - Thread[GLThread 16295,5,main] - Gdx bus resumed.
+[21:29:02:841] - Thread[GLThread 16295,5,main] - Screen.show() MenuScreen
+[21:29:03:304] - Thread[main,5,main] - IabManager successfully initialized.
+[21:29:03:846] - Thread[LobbyUpdateTimer,5,main] - REQ : {"command":1016}
+[21:29:04:015] - Thread[GLThread 16295,5,main] - RES : {"commandName":"SERVER_LOBBY_UPDATE_DATA","totalUsers":7656,"t":1426451346133,"errorCode":0,"roomUserCount":[{"users":137617,"roomId":16},{"users":590,"roomId":17},{"users":1265,"roomId":18},{"users":17250,"roomId":13},{"users":3797,"roomId":14},{"users":1257,"roomId":15}],"command":1016}
+[21:29:04:113] - Thread[pool-2-thread-1,5,main] - Purchase service initialized. There are 6 items.
+[21:29:04:117] - Thread[pool-2-thread-1,5,main] - Iab items ready (crm) : [IabItem [title=$ 50.000  (Backgammon Plus), description=$ 50.000 , marketPrice=550,00 HUF, sku=m_tavla_50000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=50000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=550000000, consumable=true], IabItem [title=$ 225.000 (Backgammon Plus), description=$ 225.000, marketPrice=1 380,00 HUF, sku=m_tavla_225000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=225000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=1380000000, consumable=true], IabItem [title=$ 675.000 (Backgammon Plus), description=$ 675.000, marketPrice=3 070,00 HUF, sku=m_tavla_675000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=675000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=3070000000, consumable=true], IabItem [title=$ 1.500.000 (Backgammon Plus), description=$ 1.500.000, marketPrice=4 453,00 HUF, sku=m_tavla_1500000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=1500000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=4453000000, consumable=true], IabItem [title=$ 5.000.000  (Backgammon Plus), description=$ 5.000.000 , marketPrice=9 088,00 HUF, sku=m_tavla_5000000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=5000000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=9088000000, consumable=true], IabItem [title=$ 25.000.000  (Backgammon Plus), description=$ 25.000.000 , marketPrice=11 974,00 HUF, sku=m_tavla_25000000, discount=false, oldPrice=0.0, newPrice=0.0, chipCampaign=false, discountChip=0, chip=25000000, discountPercentage=0, currencyCode=HUF, priceAmountMicros=11974000000, consumable=true]]
+[21:29:06:758] - Thread[GLThread 16295,5,main] - REQ : {"command":3106}
+[21:29:06:868] - Thread[GLThread 16295,5,main] - RES : {"commandName":"SERVER_CHOOSE_ROOM","t":1426451349202,"errorCode":0,"command":3106,"room":16}
+[21:29:06:885] - Thread[GLThread 16295,5,main] - Switching to screen CREATE_TABLE with parameters {NewTableScreenRoomId=16}
+[21:29:06:886] - Thread[GLThread 16295,5,main] - Gdx bus paused
+[21:29:06:969] - Thread[GLThread 16295,5,main] - Gdx bus resumed.
+[21:29:06:970] - Thread[GLThread 16295,5,main] - Screen.show() NewTableScreen
+[21:29:08:698] - Thread[GLThread 16295,5,main] - okButton is clicked.
+[21:29:08:722] - Thread[GLThread 16295,5,main] - REQ : {"room":16,"command":1001}
+[21:29:09:386] - Thread[GLThread 16295,5,main] - REQ : {"command":2000,"minBet":4480,"maxBet":23469,"type":0}
+[21:29:09:486] - Thread[GLThread 16295,5,main] - Switching to screen PLAY with parameters {}
+[21:29:09:487] - Thread[GLThread 16295,5,main] - Gdx bus paused
