@@ -1,48 +1,13 @@
 import os
 import converter
+from ftpreader import FTPReader
+from localreader import LocalReader
 
 __author__ = 'mocsar'
 
-import requests
-import requests_ftp
 import logging
 
-requests_ftp.monkeypatch_session()
-host = '192.168.25.182:3721'
-s = requests.Session()
-
-logger = logging.getLogger('bg-main')
-
-
-def lst():
-    resp = s.nlst('ftp://{}/tavlaplus/'.format(host))
-    if resp.status_code == 226:
-        return str(resp.content).replace('\r', '').splitlines()
-    else:
-        text = ""
-        try:
-            text = resp.text
-        except: pass
-        raise Exception('Response error: {}; {}'.format(resp.status_code, text))
-
-
-def process(tavla_file_name, gnu_file_name):
-    logger.info('Processing: %s', tavla_file_name)
-    resp = s.retr('ftp://{}/tavlaplus/{}'.format(host, tavla_file_name))
-    if resp.status_code == 226:
-        try:
-            converter.convert(gnu_file_name, str(resp.content).replace('\r', '').splitlines())
-            return True
-        except Exception as ex:
-            logger.error('Error while converting: %s', ex)
-    else:
-        text = ""
-        try:
-            text = resp.text
-        except: pass
-        logger.error('Response error: {}; {}'.format(resp.status_code, text))
-    return False
-
+logger = logging.getLogger('bg.main')
 
 def convert_to_gnu(tavla_file_name):
     name, ext = os.path.splitext(os.path.split(tavla_file_name)[1])
@@ -53,12 +18,25 @@ def main():
     oud_dir = 'converted'
     force_if_exists = True
 
-    new_files = lst()
+    # reader = FTPReader('192.168.25.182:3721')
+    reader = LocalReader('C:\\Users\\mocsar\\projects\\bg-py\\bg-converter\\gnu_files\\tavlaplus2')
+
+    new_files = reader.list_files()
     old_files = os.listdir(oud_dir)
     for tavla_file_name in new_files:
         gnu_file_name, is_session, ext= convert_to_gnu(tavla_file_name)
+        gnu_file_name = os.path.join(oud_dir, gnu_file_name)
         if (force_if_exists or gnu_file_name not in old_files) and (not is_session) and (ext == '.tp'):
-            process(tavla_file_name, os.path.join(oud_dir, gnu_file_name))
+            logger.info('Processing: %s', tavla_file_name)
+            lines = reader.read_lines(tavla_file_name)
+            try:
+                converted = converter.Converter().convert(lines)
+                logger.debug('writing converted content to : {}'.format(gnu_file_name))
+                with open(gnu_file_name, 'w') as out:
+                    n__join = u'\n'.join(converted)
+                    out.write(n__join.encode('utf-8'))
+            except Exception as ex:
+                logger.exception('Error while converting: %s', ex)
         else: logger.info('skip to convert: {}'.format(tavla_file_name))
 
 
