@@ -18,8 +18,8 @@ def main():
     oud_dir = 'converted'
     force_if_exists = True
 
-    # reader = FTPReader('192.168.25.182:3721')
-    reader = LocalReader('C:\\Users\\mocsar\\projects\\bg-py\\bg-converter\\gnu_files\\tavlaplus2')
+    reader = FTPReader('192.168.25.182:3721')
+    # reader = LocalReader('C:\\Users\\mocsar\\projects\\bg-py\\bg-converter\\gnu_files\\tavlaplus2')
 
     new_files = reader.list_files()
     old_files = os.listdir(oud_dir)

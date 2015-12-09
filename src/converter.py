@@ -104,7 +104,11 @@ class Converter(object):
         """
         :type in_line: str
         """
-        time, thread, msg = in_line.split(' - ', 3)
+        try:
+            time, thread, msg = in_line.split(' - ', 3)
+        except Exception as ex:
+            logger.error('could not split: %s   %s', in_line, ex)
+            return
         if msg.startswith('RES : ') or msg.startswith('REQ : '):
             resreq = msg[:3]
             msg = msg[6:]
@@ -112,7 +116,7 @@ class Converter(object):
             try:
                 j = json.loads(msg)
             except Exception as ex:
-                logger.debug('could not decode json %s', msg)
+                logger.error('could not decode json %s', msg)
                 return
             if j is not None: self.handle_event(converted, resreq, j)
 
