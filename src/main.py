@@ -1,4 +1,7 @@
+#!/usr/bin/env python
+
 import os
+os.chdir(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..'))
 import converter
 from ftpreader import FTPReader
 from localreader import LocalReader
